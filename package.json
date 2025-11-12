@@ -12,6 +12,7 @@
         "enableMultiJS": true,
         "messageKeys": {
             "battery_request": 4,
+            "battery_answer": 5,
             "config_background": 7,
             "config_character": 15,
             "config_show_battery": 1,

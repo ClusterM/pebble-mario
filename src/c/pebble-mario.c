@@ -1008,7 +1008,7 @@ void handle_tick(struct tm *tick_time, TimeUnits units_changed)
   if (units_changed & MINUTE_UNIT)
   {
     if (
-         (config_show_phone_battery && ((phone_battery_level < 0) || (tick_time->tm_min % 30 == 0)))
+         (config_show_phone_battery /* && ((phone_battery_level < 0) || (tick_time->tm_min % 30 == 0))*/)
          || (config_show_weather && (tick_time->tm_min % 5 == 0) && (weather_age > WEATHER_UPDATE_INTERVAL))
        )
       request_all();
